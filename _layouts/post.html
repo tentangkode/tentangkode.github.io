@@ -1,7 +1,7 @@
 ---
 layout: default
 disqus: false
-archive: false
+archive: true
 post_class: post-template
 ---
 
@@ -32,7 +32,7 @@ post_class: post-template
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
-                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a>
+                        <a target="_blank" class="link-dark" href="{{ author.web }}">{{ author.display_name }}</a><a target="_blank" href="{{ author.twitter }}" class="btn follow">Follow</a><br/>
                         <span class="author-description">{{ author.description }}</span>
                     </div>
                 </div>
@@ -123,10 +123,10 @@ post_class: post-template
             <!-- Prev/Next -->
             <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
             {% if page.previous.url %}
-            <a class="prev d-block col-md-6" href="{{ site.baseurl }}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
+            <a class="prev d-block col-md-6" href="{{site.baseurl}}/{{page.previous.url}}"> &laquo; {{page.previous.title}}</a>
             {% endif %}
             {% if page.next.url %}
-            <a class="next d-block col-md-6 text-lg-right" href="{{ site.baseurl }}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
+            <a class="next d-block col-md-6 text-lg-right" href="{{site.baseurl}}/{{page.next.url}}">{{page.next.title}} &raquo; </a>
             {% endif %}
             <div class="clearfix"></div>
             </div>
@@ -140,19 +140,21 @@ post_class: post-template
 <!-- End Article
 ================================================== -->
 
-<!-- Begin Comments
-================================================== -->
-{% if page.comments != false %}
-    <div class="container">
-        <div id="comments" class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                {% include disqus.html %}
+{% if site.discuss == "enabled" %}
+    <!-- Begin Comments
+    ================================================== -->
+    {% if page.comments != false %}
+        <div class="container">
+            <div id="comments" class="row justify-content-center mb-5">
+                <div class="col-md-8">
+                    {% include disqus.html %}
+                </div>
             </div>
         </div>
-    </div>
+    {% endif %}
+    <!--End Comments
+    ================================================== -->
 {% endif %}
-<!--End Comments
-================================================== -->
 
 <!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
 https://search.google.com/structured-data/testing-tool/u/0/
