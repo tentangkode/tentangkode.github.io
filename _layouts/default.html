@@ -77,7 +77,18 @@
                         {% else %}
                     <li class="nav-item">
                         {% endif %}
-                        <a class="nav-link" href="{{ site.baseurl }}">Blog</a>
+                        <a class="nav-link" href="{{ site.baseurl }}/">Blog</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Tutorial Pemograman
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="{{ site.baseurl }}/categories#golang">Golang</a>
+                          <a class="dropdown-item" href="{{ site.baseurl }}/categories#javascript">Javascript</a>
+                          <a class="dropdown-item" href="{{ site.baseurl }}/categories#php">PHP</a>
+                        </div>
                     </li>
 
                     <li class="nav-item">
@@ -128,15 +139,8 @@
             <div class="alertbar">
                 <div class="container text-center">
                     <span><img width="35px" src="{{ site.baseurl }}/{{ site.logo }}" alt="{{site.title}}"> &nbsp; Never
-                        miss a <b>story</b> from us, subscribe to our newsletter</span>
-                    <form action="{{site.mailchimp-list}}" method="post" name="mc-embedded-subscribe-form"
-                        class="wj-contact-form validate" target="_blank" novalidate>
-                        <div class="mc-field-group">
-                            <input type="email" placeholder="Email" name="EMAIL" class="required email" id="mce-EMAIL"
-                                autocomplete="on" required>
-                            <input type="submit" value="Subscribe" name="subscribe" class="heart">
-                        </div>
-                    </form>
+                        miss a <b>story</b> from us, subscribe to our youtube</span>
+                    <a target="_blank" href="https://www.youtube.com/c/TentangKode?sub_confirmation=1"><i class="fab fa-youtube" style="color: #f20303"></i> Youtube Channel</a>
                 </div>
             </div>
             {% endif %}
