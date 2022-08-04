@@ -2,7 +2,7 @@
 layout: post
 title:  "Tutorial Golang - Membangun REST API dengan Gorilla/Mux, Gorm, MySQL"
 author: tentangkode
-categories: [ golang, rest api, gorilla/mux ]
+categories: [ golang, restapi, gorilla mux ]
 image: assets/images/post/golang/mux-restapi.png
 image_featured: assets/images/featured/golang-restapi-mux.png
 featured: true

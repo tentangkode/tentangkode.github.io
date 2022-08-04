@@ -2,7 +2,7 @@
 layout: post
 title:  "Tutorial Golang - Mengamankan REST API dengan JWT, Mux Middleware"
 author: tentangkode
-categories: [ golang, jwt, gorilla/mux ]
+categories: [ golang, jwt, gorilla mux ]
 image: assets/images/post/golang/mux-jwt.png
 image_featured: assets/images/featured/golang-jwt-mux.png
 featured: true

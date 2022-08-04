@@ -2,7 +2,7 @@
 layout: post
 title:  "Tutorial Golang - Membangun REST API dengan Gin, Gorm, MySQL"
 author: tentangkode
-categories: [ golang, rest api, gin ]
+categories: [ golang, restapi, gin ]
 image: assets/images/post/golang/gin-restapi.png
 image_featured: assets/images/featured/golang-restapi-gin.png
 featured: true
