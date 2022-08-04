@@ -3,7 +3,7 @@ name: "TentangKode"
 title: "TentangKode"
 description: "Tempat belajar bahasa pemrograman"
 logo: 'assets/images/logo.png'
-domain: 'https://tentangkode.net'
+domain: 'tentangkode.net'
 favicon: 'assets/images/logo.png'
 baseurl: ""
 google_analytics: ''
